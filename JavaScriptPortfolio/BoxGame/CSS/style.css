@@ -1,0 +1,349 @@
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(81deg, rgba(0, 0, 0, 1) 0%, rgba(255, 10, 10, 08071603641456583) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.winFlag {
+    background-image: url(../gallery/victoryFlagImage.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    animation: winFlag 2s ease-in;
+    margin: 0 auto;
+    z-index: 0;
+    margin-bottom: 296px;
+    text-align: center;
+    padding-top: 0.9rem;
+    font-weight: bold;
+    font-size: 24pt;
+    display: none;
+}
+
+@keyframes winFlag {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 230px;
+    }
+}
+
+.lvlUp {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 29%;
+    z-index: 1;
+}
+
+.threeD-link {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    box-shadow: 0 5px #3e8e41;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    animation: buttonLvl 4s ease-in;
+    display: none;
+}
+
+.threeD-link:active {
+    top: 5px;
+    box-shadow: 0 2px #3e8e41;
+}
+
+.threeD-link:hover {
+    background-color: #45a049;
+}
+
+.threeD-link:focus {
+    outline: none;
+}
+
+@keyframes buttonLvl {
+    0% {
+        top: -30px;
+        opacity: 0.3;
+        right: -100px;
+    }
+
+    50% {
+        opacity: 0.7;
+        top: 170px;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+.welcome {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 29%;
+    z-index: 1;
+    display: none;
+}
+
+.welcome p {
+    font-size: 1.3rem;
+    color: orange;
+}
+
+.title {
+    position: absolute;
+    font-size: 6em;
+    color: #FFD700;
+    /* צבע כותרת דמוי מריו */
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
+    /* צל של הטקסט */
+    transform: perspective(300px) rotateY(15deg);
+    /* אפקט תלת מימד */
+    margin-bottom: 25rem;
+}
+
+.fade {
+    animation: title 2s ease-in;
+}
+
+@keyframes title {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.settingsBtnBox {
+    width: 1024px;
+    height: 576px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    flex-direction: row-reverse;
+}
+
+
+
+.settings {
+    width: 1024px;
+    height: 576px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+    background-color: #fff;
+    display: none;
+}
+
+.settingsBtn {
+    top: 4px;
+    left: 0;
+    position: absolute;
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+}
+
+
+.settingsInfo {
+    box-sizing: border-box;
+    padding-top: 55px;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    font-family: 'Press Start 2P', arial;
+}
+
+.settingsInfo h1 {
+    color: orangered;
+}
+
+.keysBox {
+    width: 500px;
+    height: 170px;
+    padding-top: 20px;
+}
+
+.keysBox h3 {
+    color: #4CAF50;
+    font-size: 18pt;
+}
+
+.keysBox .key {
+    width: 400px;
+    display: flex;
+    margin: 10px auto;
+    padding-left: 115px;
+    box-sizing: border-box;
+    font-size: 10pt;
+}
+
+img[alt='SpacebarKey'] {
+    width: 50px;
+    height: 20px;
+}
+
+.stars {
+    position: absolute;
+    width: 1054px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stars img {
+    width: 60px;
+
+}
+
+.settingsBtnBox img[alt='road Map'] {
+    width: 50px;
+    height: 30px;
+}
+
+#mapBtn {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.map #mapBtn img {
+    width: 50px;
+    height: 30px;
+}
+
+.map {
+    position: absolute;
+    width: 1027px;
+    height: 576px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+.map img {
+    width: 1027px;
+    height: 576px;
+}
+
+.map a {
+    position: absolute;
+    z-index: 4;
+    font-size: 22pt;
+    color: #fff;
+    padding: 17px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.btn-3d {
+    background-color: #ff4757;
+    font-weight: bold;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    bottom: 0;
+    text-align: center;
+}
+
+.btn-3d:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(to right, #ff6b81, #ff4757);
+    z-index: -1;
+    transition: all 0.2s ease;
+    outline: 2px solid aqua;
+}
+
+.btn-3d:hover {
+    scale: 0.92;
+}
+
+.btn-3d:active {
+    transform: scale(0.85);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-3d:active:before {
+    transform: scale(0.85);
+}
+
+.lvl-1 {
+    position: absolute;
+    left: 60px;
+    bottom: 110px;
+}
+
+.lvl-2 {
+    position: absolute;
+    left: 220px;
+    bottom: 180px;
+}
+
+.lvl-3 {
+    position: absolute;
+    left: 393px;
+    bottom: 210px;
+}
+
+.lvl-4 {
+    position: absolute;
+    left: 550px;
+    bottom: 275px;
+}
+
+.lvl-5 {
+    position: absolute;
+    left: 650px;
+    bottom: 380px;
+}
+
+.lvl-6 {
+    position: absolute;
+    left: 750px;
+    bottom: 480px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="./gallery/Icon David.jpg">
+    <title>JS Portfolio</title>
+
+    <link rel="stylesheet" href="./sass/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <button id="darkBtn" onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
+        <button id="lightBtn" onclick="lightMode()"><i class="fa-regular fa-moon"></i></button>
+
+        <!-- phone navbar -->
+        <div class="phoneNav">
+            <div class="phoneNavInfo">
+                <button onclick="openNav()">&#9776;</button>
+                <div class="phoneLinksContainer">
+                    <ul class="phoneLinks">
+                        <li><a class="active link-border hidden" href="#">Portfolio</a>
+                        <li>
+                        <li><a class="link-border hidden" href="#projectsCP"><span
+                                    class="blue">CSS</span>&nbsp;Projects</a></li>
+                        <li><a class="link-border hidden" href="#jsProjectsCP"><span
+                                    class="orange">JS</span>&nbsp;Projects</a></li>
+                        <li><a class="link-border hidden" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- pc navbar -->
+        <nav>
+            <div class="logo">
+                <img src="./gallery/Icon David.jpg" alt="Icon">
+                <h2>David Polak</h2>
+            </div>
+
+            <ul>
+                <li><a class="active link-border" href="#">Portfolio</a>
+                <li>
+                <li><a class="link-border hidden" href="#projectsCP"><span class="blue">CSS</span>&nbsp;Projects</a>
+                </li>
+                <li><a class="link-border hidden" href="#jsProjectsCP"><span class="orange">JS</span>&nbsp;Projects</a>
+                </li>
+                <li><a class="link-border" href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <div class="bottom-border">&nbsp;</div>
+
+    <!-- Tools Icons -->
+    <section class="tools">
+        <div class="tool hidden">
+            <img src="./gallery/html-logo.png" alt="html-logo">
+        </div>
+        <div class="tool hidden">
+            <img src="./gallery/css-logo.webp" alt="html-logo">
+        </div>
+        <div class="tool hidden">
+            <img src="./gallery/js-logo.webp" alt="html-logo">
+        </div>
+    </section>
+
+    <!-- Home Display -->
+    <main class="home-display">
+        <h1 class="hidden"><span>David</span></h1>
+        <div class="home-display-content">
+            <p>
+                I'm A <span data-text="Full Stuck Developer" class="workSign">Full Stack Developer</span>
+            </p>
+
+            <p>
+                and This Is my <span class="sign">Portfolio</span>
+            </p>
+        </div>
+
+        <div class="downloadLink">
+            <a href="#">download CV</a>
+        </div>
+
+    </main>
+    <div style="height: 2px;" id="projectsCP"></div>
+    <div class="bottom-border">&nbsp;</div>
+
+
+    <!-- html css projects -->
+    <section class="projects-section">
+        <h1 class="hidden">Projects</h1>
+        <p>Those are my <span class="blue"> CSS</span> Projects</p>
+
+        <div class="projects-gallery">
+
+            <div class="project one hidden">
+                <div class="overlay">
+                    <a href="#" class="cssLink"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project two hidden">
+                <div class="overlay">
+                    <a href="#" class="cssLink"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project three hidden">
+                <div class="overlay">
+                    <a href="#" class="cssLink"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project four hidden">
+                <div class="overlay">
+                    <a href="#" class="cssLink"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project five hidden">
+                <div class="overlay">
+                    <a href="#" class="cssLink"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project six hidden">
+                <div class="overlay">
+                    <a href="#" class="cssLink"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="height: 2px;" id="jsProjectsCP"></div>
+    <div class="bottom-border">&nbsp;</div>
+
+    <!-- js projects -->
+    <section class="projects-section">
+        <h1 class="hidden">Projects</h1>
+        <p>Those are my <span class="orange">JS</span> Projects</p>
+
+        <div class="projects-gallery">
+            <div class="project jsOne hidden">
+                <a href="./BoxGame/HTML/lvlTwo.html" target="_blank">Box Game</a>
+                <!-- <a href="https://boxgame.onrender.com/">Box Game</a> -->
+                <video class="video" src="./videos/boxGameVideo.mp4"></video>
+            </div>
+            <div class="project hidden">
+                <a href="#">Flying Game</a>
+            </div>
+            <div class="project hidden">
+                <a href="#">X - O</a>
+            </div>
+            <div class="project hidden">
+                <a href="#">Box Game</a>
+
+            </div>
+            <div class="project hidden">
+                <a href="#">Box Game</a>
+            </div>
+            <div class="project hidden">
+                <a href="#">Box Game</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>

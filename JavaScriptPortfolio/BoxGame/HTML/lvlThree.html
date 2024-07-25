@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Game</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="Icon" href="../gallery/Icon David.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="settingsBtnBox">
+        <button id="openSet" onclick="openSettings()" class="settingsBtn">
+            <img src="../gallery/settings.gif" alt="settings">
+        </button>
+
+        <button id="mapBtn" onclick="openMap()">
+            <img src="../gallery/World-Map-icon.png" alt="road Map">
+        </button>
+    </div>
+
+    <div class="map">
+        <button id="mapBtn" onclick="closeMap()">
+            <img src="../gallery/World-Map-icon.png" alt="road Map">
+        </button>
+        <img src="../gallery/the-map.jpg" alt="the map">
+        <span class="map-road">
+            <a class="btn-3d lvl-1" href="../index.html">1</a>
+            <a class="btn-3d lvl-2" href="../HTML/lvlTwo.html">2</a>
+            <a class="btn-3d lvl-3" href="../HTML/lvlThree.html">3</a>
+            <a class="btn-3d lvl-4" href="#">4</a>
+            <a class="btn-3d lvl-5" href="#">5</a>
+            <a class="btn-3d lvl-6" href="#">6</a>
+        </span>
+    </div>
+
+    <div class="settings">
+        <button onclick="closeSettings()" class="settingsBtn">
+            <img src="../gallery/settings.gif" alt="settings">
+        </button>
+        <div class="settingsInfo">
+            <h1>Settings</h1>
+            <div class="keysBox">
+                <h3>Keys</h3>
+                <span class="key">
+                    <img src="../gallery/Wkey.png" alt="w Key"> / <img src="../gallery/SpacebarKey.png"
+                        alt="SpacebarKey"> =
+                    Jump
+                </span>
+                <span class="key"> <img src="../gallery/Dkey.png" alt="d Key"> = Move Right</span>
+                <span class="key"> <img src="../gallery/Akey.png" alt="a Key"> = Move Left</span>
+            </div>
+        </div>
+    </div>
+    <!--  <div class="stars">
+        <img src="../gallery/star.png" alt="star">
+    </div> -->
+
+    <div class="title">LVL 3</div>
+    <div class="winFlag">VICTORY</div>
+    <div class="lvlUp"><a class="threeD-link" href="./lvlThree.html">lvl 4</a></div>
+    <div class="welcome">
+        <p>&#9888; False Jump ;] &#9888;</p>
+    </div>
+    <canvas></canvas>
+    <script src="../JavaScript/lvlThree.js"></script>
+</body>
+
+</html>
